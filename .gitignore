@@ -1,0 +1,21 @@
+# .gitignore
+
+# Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Log File
+session_log.txt
+
+# Model Weights (Trained model can be large)
+# If the model is too large, you should use Git LFS or upload separately. 
+# For now, we exclude the fine-tuned folder to keep the repo clean.
+# If you want to push the small files (tokenizer), remove the line below.
+dialo_model_finetuned/ 
+
+# OS generated files
+.DS_Store
+.vscode/
